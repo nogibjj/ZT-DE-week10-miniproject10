@@ -14,3 +14,8 @@ df = spark.read.csv(file_path, header=True, inferSchema=True)
 # df.printSchema()
 
 # df.describe().show()
+
+# List all column names
+column_names = df.columns
+print(column_names)
+
